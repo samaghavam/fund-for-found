@@ -6,6 +6,7 @@ import SignUpUserSteps from "@/components/tutorial/SignUpUserSteps";
 import Header from "@/components/Header";
 import Inputs from "@/components/shared/Input";
 import { LuSearch } from "react-icons/lu";
+import Button from "@/components/shared/Button";
 
 
 export default async function Index() {
@@ -35,6 +36,7 @@ export default async function Index() {
         <Header />
         <main className="flex-1 flex flex-col gap-6">
           <Inputs placeholder="Search brand, category, tag or..." icon={LuSearch} />
+          <Button text="start" />
           <h2 className="font-bold text-4xl mb-4">Next steps</h2>
           {isSupabaseConnected ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
         </main>
