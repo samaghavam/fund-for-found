@@ -7,9 +7,9 @@ interface CustomLinkProps {
   textColor?: string; 
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({ text, href, textColor = 'text-primary' }) => {
+const CustomLink: React.FC<CustomLinkProps> = ({ text, href, textColor = 'text-primary300' }) => {
   return (
-    <Link href={href} className={`${textColor} hover:underline`}>
+    <Link href={href} className={`${textColor} text-center font-medium text-sm hover:underline`}>
       {text}
     </Link>
   );
