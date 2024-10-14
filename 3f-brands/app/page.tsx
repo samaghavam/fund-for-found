@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Inputs from "@/components/shared/Input";
 import { LuSearch } from "react-icons/lu";
 import Button from "@/components/shared/Button";
+import Title from "@/components/shared/Title";
 
 
 export default async function Index() {
@@ -37,8 +38,8 @@ export default async function Index() {
         <main className="flex-1 flex flex-col gap-6">
           <Inputs placeholder="Search brand, category, tag or..." icon={LuSearch} />
           <Button text="start" />
-          <h2 className="font-bold text-4xl mb-4">Next steps</h2>
-          {isSupabaseConnected ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
+          <Title title="Create your profile and take the first step towards new opportunities" 
+          desc="By creating your account, you'll gain access to a thriving community where brands and individuals are committed to offering you ongoing support. This support network will empower you with the resources, guidance, and connections you need to succeed, ensuring that you’re never alone on your journey."/>
         </main>
       </div>
 
